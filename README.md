@@ -751,23 +751,7 @@ PKInkingTool    // Pen/brush configuration
 - Also works with finger input
 - Natural drawing experience
 - Easy image export
-
-#### SwiftUI + UIKit Bridge
-```swift
-// SwiftUI wrapper for UIKit views
-protocol UIViewRepresentable {
-    associatedtype UIViewType: UIView
-    func makeUIView(context: Context) -> UIViewType
-    func updateUIView(_ uiView: UIViewType, context: Context)
-    func makeCoordinator() -> Coordinator
-}
-```
-
-**Why bridge needed?**
-- PDFView is UIKit (pre-dates SwiftUI)
-- SwiftUI doesn't have native PDF view yet
-- Bridge maintains SwiftUI reactive benefits
-
+ 
 ### Annotation Types
 
 ```swift
